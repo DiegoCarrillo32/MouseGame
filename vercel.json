@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "name": "MouseGame",
+    "builds": [{ "use": "@vercel/static-build", "src": "package.json" }],
+    "routes": [
+        {
+            "src": "/(.*).js",
+            "dest": "/$1.js"
+        },
+        {
+            "src": "/.*",
+            "dest": "index.html"
+        }
+    ]
+}
